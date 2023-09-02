@@ -91,7 +91,7 @@ app.get("/*", function (req, res) {
   res.status(200).sendFile(path.join(__dirname, "public", "index.html"));
 });
 
-mongoose.connect(`mongodb+srv://skytouchinfotech:Skytouch2k21@girlsvideo.yzwjvve.mongodb.net/LiveHunt`, {
+mongoose.connect(`mongodb+srv://skytouchinfotech:Skytouch2k21@girlsvideo.yzwjvve.mongodb.net/LiveHunt?retryWrites=true&w=majority`, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true,
@@ -141,6 +141,8 @@ io.on("connect", (socket) => {
 // console.log("Magic happens on port " + config.PORT);
 
 //start the server
-server.listen(config.PORT, () => {
-  console.log("Magic happens on port " + config.PORT);
-});
+// server.listen(config.PORT, () => {
+//   console.log("Magic happens on port " + config.PORT);
+// });
+
+server.listen()
