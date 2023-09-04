@@ -7,6 +7,7 @@ module.exports = () => {
       console.log('ok');
       if (token == config.secret_key) return next();
       else
+      console.log('eease');
         return res
           .status(401)
           .send({ status: false, error: "Unauthorized access" });
