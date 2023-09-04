@@ -1,6 +1,6 @@
 module.exports = {
   //port
-  PORT: process.env.PORT || 5000,
+  PORT: 8080,
 
   //secret key
   secret_key: "bb6GAYAad7SdezsYpGeHqEg7BU6gLwEn", //generate your own key and put it same as frontend & android
