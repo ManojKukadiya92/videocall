@@ -3,7 +3,7 @@ module.exports = {
   PORT: process.env.PORT || 5000,
 
   //secret key
-  secret_key: "Skytouch", //generate your own key and put it same as frontend & android
+  secret_key: "bb6GAYAad7SdezsYpGeHqEg7BU6gLwEn", //generate your own key and put it same as frontend & android
 
   //json web token
   tokenSecret: "JRdeorhhSy",
